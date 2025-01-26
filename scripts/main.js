@@ -15,12 +15,12 @@ document.body.appendChild(renderer.domElement);
 
 const loaderCube = new THREE.CubeTextureLoader();
 const textureCube = loaderCube.load([
-  'https://threejs.org/examples/textures/cube/Park3Med/px.jpg',
-  'https://threejs.org/examples/textures/cube/Park3Med/nx.jpg',
-  'https://threejs.org/examples/textures/cube/Park3Med/py.jpg',
-  'https://threejs.org/examples/textures/cube/Park3Med/ny.jpg',
-  'https://threejs.org/examples/textures/cube/Park3Med/pz.jpg',
-  'https://threejs.org/examples/textures/cube/Park3Med/nz.jpg'
+  'https://threejs.org/examples/textures/cube/SwedishRoyalCastle/px.jpg',
+  'https://threejs.org/examples/textures/cube/SwedishRoyalCastle/nx.jpg',
+  'https://threejs.org/examples/textures/cube/SwedishRoyalCastle/py.jpg',
+  'https://threejs.org/examples/textures/cube/SwedishRoyalCastle/ny.jpg',
+  'https://threejs.org/examples/textures/cube/SwedishRoyalCastle/pz.jpg',
+  'https://threejs.org/examples/textures/cube/SwedishRoyalCastle/nz.jpg'
 ]);
 
 scene.background = textureCube;
@@ -28,11 +28,11 @@ scene.background = textureCube;
 const ambientLight = new THREE.AmbientLight(0x404040, 4);
 scene.add(ambientLight);
 
-const directionalLight1 = new THREE.DirectionalLight(0xffffff, 3);
+const directionalLight1 = new THREE.DirectionalLight(0xffffff, 1);
 directionalLight1.position.set(0, 0, 8).normalize();
 scene.add(directionalLight1);
 
-const directionalLight2 = new THREE.DirectionalLight(0xffffff, 3);
+const directionalLight2 = new THREE.DirectionalLight(0xffffff, 1);
 directionalLight2.position.set(0, 0, -8).normalize();
 scene.add(directionalLight2);
 
